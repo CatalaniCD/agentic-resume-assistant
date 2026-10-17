@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-# agentic-resume-assistant
 Agentic Chat Interface for resume review
 =======
 # Agentic Resume
@@ -146,4 +144,3 @@ git-ignored — keep it out of version control and rotate the key if it leaks.
 ## Documentation
 
 See `docs/` for `intent.md`, `design.md`, `spec.md`, `plan.md`, and `test.md`.
->>>>>>> 670ac05 (push commit)
