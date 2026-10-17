@@ -51,6 +51,8 @@
       color: var(--color-text-primary);
       transition: background 0.25s ease, color 0.25s ease;
       margin: 0;
+      height: 100vh;
+      height: 100dvh;
     }
 
     ::selection { background: var(--color-accent); color: var(--color-surface); }
@@ -144,9 +146,30 @@
     .msg-assistant pre code { border: none; padding: 0; }
     .msg-assistant a { color: var(--color-accent); text-decoration: underline; }
     .msg-assistant strong { font-weight: 700; }
+
+    /* Mobile section switcher */
+    .seg {
+      display: inline-flex; gap: 2px; padding: 3px; border-radius: 9999px;
+      background: var(--color-surface); border: 1px solid var(--color-border);
+    }
+    .seg button {
+      padding: 0.375rem 1rem; font-size: 0.8125rem; font-weight: 600; line-height: 1.25;
+      border: none; border-radius: 9999px; cursor: pointer; background: transparent;
+      color: var(--color-text-secondary); transition: all 0.2s ease;
+    }
+    .seg button[aria-selected="true"] { background: var(--color-accent); color: var(--color-surface); }
+
+    #mobileBar { padding-top: env(safe-area-inset-top); }
+    #form { padding-bottom: calc(0.75rem + env(safe-area-inset-bottom)); }
+
+    @media (max-width: 767.98px) {
+      body[data-view="profile"] #chat { display: none; }
+      body[data-view="chat"] #profile { display: none; }
+      #profile { padding: 1.5rem 1.25rem; }
+    }
   </style>
 </head>
-<body class="h-screen w-full flex flex-col md:flex-row overflow-hidden">
+<body class="w-full flex flex-col md:flex-row overflow-hidden" data-view="profile">
 
   <button id="langToggle"
     class="fixed top-4 left-5 z-50 px-3 py-1.5 text-xs font-medium rounded-full bg-[var(--color-surface-elevated)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all shadow-md"></button>
@@ -162,16 +185,34 @@
     </svg>
   </button>
 
-  <aside id="profile"
-    class="w-full md:w-2/5 p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-[var(--color-border)] bg-[var(--color-surface)] overflow-y-auto scrollbar-thin">
+  <header id="mobileBar"
+    class="md:hidden shrink-0 flex items-center justify-center px-4 py-3 border-b border-[var(--color-border)] bg-[var(--color-surface-elevated)]">
+    <div class="seg" role="tablist" aria-label="Sections">
+      <button id="tab-profile" type="button" role="tab" aria-selected="true" aria-controls="profile"></button>
+      <button id="tab-chat" type="button" role="tab" aria-selected="false" aria-controls="chat"></button>
+    </div>
+  </header>
+
+  <aside id="profile" role="tabpanel"
+    class="w-full md:w-2/5 p-8 flex flex-col justify-between flex-1 min-h-0 md:flex-none border-b md:border-b-0 md:border-r border-[var(--color-border)] bg-[var(--color-surface)] overflow-y-auto scrollbar-thin">
     <div class="text-sm text-[var(--color-text-muted)]">Loading…</div>
   </aside>
 
-  <main class="w-full md:w-3/5 h-full flex flex-col bg-[var(--color-surface)] min-w-0">
-    <div class="border-b border-[var(--color-border)] p-4 bg-[var(--color-surface-elevated)]">
-      <h3 id="suggestedTitle" class="section-title mb-4"></h3>
-      <div id="category-pills" class="flex flex-wrap gap-2 mb-3"></div>
-      <div id="question-pills" class="flex flex-wrap gap-2"></div>
+  <main id="chat" role="tabpanel"
+    class="w-full md:w-3/5 flex-1 min-h-0 md:h-full flex flex-col bg-[var(--color-surface)] min-w-0">
+    <div class="border-b border-[var(--color-border)] p-4 bg-[var(--color-surface-elevated)] shrink-0">
+      <button id="suggestionsToggle" type="button" aria-expanded="false" aria-controls="suggestionsBody"
+        class="md:hidden w-full flex items-center justify-between">
+        <span id="suggestedTitleMobile" class="section-title"></span>
+        <svg id="suggestionsChevron" class="w-4 h-4 text-[var(--color-text-muted)] transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <h3 id="suggestedTitle" class="section-title mb-4 hidden md:block"></h3>
+      <div id="suggestionsBody" class="hidden md:block mt-4 md:mt-0">
+        <div id="category-pills" class="flex flex-wrap gap-2 mb-3"></div>
+        <div id="question-pills" class="flex flex-wrap gap-2"></div>
+      </div>
     </div>
 
     <div id="messages" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
@@ -193,13 +234,14 @@
         infrastructure: "Infrastructure", ai: "AI / ML", quant: "Quant Finance",
         at: "at", tech: "Tech:", view: "View",
         openTo: "Open to", certifications: "Certifications",
+        tabProfile: "Profile", tabChat: "Chat",
         footer1: "Powered by Cloudflare Pages & OpenRouter.",
         footer2: "Vanilla JS + LangChain · no build step.",
         suggested: "Suggested Questions",
         placeholder: "Type your query here...",
         send: "Send",
         switchTo: "ES",
-        greeting: (name) => `Hello! I'm an AI representation of ${name}. Ask me about their background, skills, or experience.`,
+        greeting: (name) => `Hi, I'm MrBot — I represent ${name}. Ask me about his background, skills, or fit for a role.`,
       },
       es: {
         title: "Desarrollador Cuantitativo | Ingeniero IA",
@@ -207,13 +249,14 @@
         infrastructure: "Infraestructura", ai: "IA / ML", quant: "Finanzas Cuantitativas",
         at: "en", tech: "Tecnologías:", view: "Ver",
         openTo: "Disponible para", certifications: "Certificaciones",
+        tabProfile: "Perfil", tabChat: "Chat",
         footer1: "Impulsado por Cloudflare Pages y OpenRouter.",
         footer2: "JS vanilla + LangChain · sin build.",
         suggested: "Preguntas Sugeridas",
         placeholder: "Escribe tu consulta aquí...",
         send: "Enviar",
         switchTo: "EN",
-        greeting: (name) => `¡Hola! Soy una representación IA de ${name}. Pregúntame sobre su trayectoria, habilidades o experiencia.`,
+        greeting: (name) => `Hola, soy MrBot — represento a ${name}. Pregúntame por su trayectoria, habilidades o encaje en un rol.`,
       },
     };
 
@@ -241,6 +284,8 @@
       categoryIndex: 0,
       history: [],
       loading: false,
+      view: "profile",
+      suggestionsOpen: false,
     };
 
     const html = document.documentElement;
@@ -254,12 +299,35 @@
     const iconMoon = document.getElementById("icon-moon");
     const iconSun = document.getElementById("icon-sun");
     const suggestedTitle = document.getElementById("suggestedTitle");
+    const suggestedTitleMobile = document.getElementById("suggestedTitleMobile");
     const categoryPills = document.getElementById("category-pills");
     const questionPills = document.getElementById("question-pills");
+    const tabProfile = document.getElementById("tab-profile");
+    const tabChat = document.getElementById("tab-chat");
+    const suggestionsToggle = document.getElementById("suggestionsToggle");
+    const suggestionsBody = document.getElementById("suggestionsBody");
+    const suggestionsChevron = document.getElementById("suggestionsChevron");
 
     const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
     const val = (lang, en, es) => (lang === "es" && es ? es : en);
     const scrollDown = () => { messagesEl.scrollTop = messagesEl.scrollHeight; };
+
+    // ---------- Sections (mobile) ----------
+    function setView(view) {
+      state.view = view;
+      document.body.dataset.view = view;
+      tabProfile.setAttribute("aria-selected", String(view === "profile"));
+      tabChat.setAttribute("aria-selected", String(view === "chat"));
+      try { localStorage.setItem("view", view); } catch (_) {}
+      if (view === "chat") { scrollDown(); input.focus(); }
+    }
+
+    function setSuggestions(open) {
+      state.suggestionsOpen = open;
+      suggestionsBody.classList.toggle("hidden", !open);
+      suggestionsToggle.setAttribute("aria-expanded", String(open));
+      suggestionsChevron.classList.toggle("rotate-180", open);
+    }
 
     // ---------- Theme ----------
     function syncThemeIcons() {
@@ -396,6 +464,7 @@
       const L = state.lang;
       const cats = CATEGORIES[L];
       suggestedTitle.textContent = UI[L].suggested;
+      suggestedTitleMobile.textContent = UI[L].suggested;
       categoryPills.innerHTML = cats.map((c, i) =>
         `<button type="button" data-category="${i}" class="pill ${i === state.categoryIndex ? "pill-active" : ""}">${esc(c.label)}</button>`
       ).join("");
@@ -504,6 +573,14 @@
       submit(input.value);
     });
 
+    tabProfile.addEventListener("click", () => setView("profile"));
+    tabChat.addEventListener("click", () => setView("chat"));
+    suggestionsToggle.addEventListener("click", () => setSuggestions(!state.suggestionsOpen));
+    window.addEventListener("hashchange", () => {
+      const h = location.hash.replace("#", "");
+      if (h === "chat" || h === "profile") setView(h);
+    });
+
     categoryPills.addEventListener("click", (e) => {
       const btn = e.target.closest("button[data-category]");
       if (!btn) return;
@@ -514,6 +591,7 @@
     questionPills.addEventListener("click", (e) => {
       const btn = e.target.closest("button[data-suggestion]");
       if (!btn || state.loading) return;
+      setSuggestions(false);
       submit(btn.getAttribute("data-suggestion"));
     });
 
@@ -530,6 +608,8 @@
       langToggle.setAttribute("title", L === "en" ? "Switch to Spanish" : "Cambiar a inglés");
       input.placeholder = UI[L].placeholder;
       sendBtn.textContent = UI[L].send;
+      tabProfile.textContent = UI[L].tabProfile;
+      tabChat.textContent = UI[L].tabChat;
       renderSuggestions();
     }
 
@@ -537,6 +617,17 @@
     (async function init() {
       syncThemeIcons();
       renderChrome();
+
+      let initial = "profile";
+      try {
+        const hash = location.hash.replace("#", "");
+        initial = hash === "chat" || hash === "profile"
+          ? hash
+          : (localStorage.getItem("view") === "chat" ? "chat" : "profile");
+      } catch (_) {}
+      setView(initial);
+      setSuggestions(false);
+
       try {
         const res = await fetch("/data.json");
         state.data = await res.json();

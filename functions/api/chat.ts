@@ -4,6 +4,7 @@
 import { ChatOpenAI } from "@langchain/openai";
 import { AIMessage, HumanMessage, SystemMessage } from "@langchain/core/messages";
 import resumeText from "../../content/resume.txt";
+import soul from "../../content/soul.txt";
 
 interface Env {
   OPENROUTER_API_KEY: string;
@@ -28,20 +29,15 @@ const LANG_INSTRUCTION: Record<Lang, string> = {
   es: "Responde siempre en español.",
 };
 
-// The full resume is sent as one plain-text system prompt (~1.5K tokens).
-// Deliberately simple: no retrieval or tool round-trips. The model answers in
-// the requested language based on LANG_INSTRUCTION.
+// The persona (content/soul.md) plus the full resume (content/resume.txt) are sent
+// as one system prompt (~1.8K tokens). Deliberately simple: no retrieval or tool
+// round-trips. The model answers in the requested language via LANG_INSTRUCTION.
 function buildSystemPrompt(lang: Lang): string {
-  return `You are an AI assistant representing the professional profile below. Answer questions about the person's background, skills, experience, education, certifications, and projects.
+  return `${soul}
 
 ${LANG_INSTRUCTION[lang]}
 
-Rules:
-1. Use only the facts in the resume below. Do not invent details.
-2. Be concise, professional, and friendly.
-3. If asked something not covered, politely say you do not have that information.
-4. Prefer short bullet points for technical answers.
-
+# Profile
 ---
 ${resumeText}`;
 }
@@ -97,7 +93,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   const model = new ChatOpenAI({
     apiKey,
     model: body.model || ctx.env.DEFAULT_MODEL || "nvidia/nemotron-3.5-lightning:free",
-    temperature: 0.3,
+    temperature: 0.6,
     streaming: true,
     configuration: {
       baseURL: "https://openrouter.ai/api/v1",
