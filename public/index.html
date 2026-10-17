@@ -241,7 +241,7 @@
         placeholder: "Type your query here...",
         send: "Send",
         switchTo: "ES",
-        greeting: (name) => `Hi, I'm MrBot — I represent ${name}. Ask me about his background, skills, or fit for a role.`,
+        greeting: (name) => `Hello! I'm MrBot, an AI representation of ${name}. Ask me about his background, skills, experience, education, or the roles he's targeting.`,
       },
       es: {
         title: "Desarrollador Cuantitativo | Ingeniero IA",
@@ -256,7 +256,7 @@
         placeholder: "Escribe tu consulta aquí...",
         send: "Enviar",
         switchTo: "EN",
-        greeting: (name) => `Hola, soy MrBot — represento a ${name}. Pregúntame por su trayectoria, habilidades o encaje en un rol.`,
+        greeting: (name) => `¡Hola! Soy MrBot, una representación IA de ${name}. Pregúntame por su trayectoria, habilidades, experiencia, formación o los roles que busca.`,
       },
     };
 
@@ -486,9 +486,11 @@
       return bubble;
     }
 
+    const FALLBACK_NAME = "Claudio Catalani";
+
     function showGreeting() {
       messagesEl.innerHTML = "";
-      addMessage("assistant", UI[state.lang].greeting(state.data.name));
+      addMessage("assistant", UI[state.lang].greeting((state.data && state.data.name) || FALLBACK_NAME));
     }
 
     // ---------- Chat streaming (ported from openrouter-chat) ----------
@@ -627,6 +629,7 @@
       } catch (_) {}
       setView(initial);
       setSuggestions(false);
+      showGreeting();
 
       try {
         const res = await fetch("/data.json");
