@@ -1,0 +1,479 @@
+0 notifications
+
+    Network
+    Jobs
+    Messaging
+    Notifications
+
+    7Sales Nav
+
+Claudio Catalani
+
+Systems Designer & Tech Lead | AI · Data · Python · Node.JS | Forward Deployment Engineer
+
+LangChain logo
+
+LangGraph Essentials
+
+LangChain
+
+Issued Oct 2026
+
+Credential ID wlvjjkpymv
+Show credential
+
+ Agentic Workflows, Agentic Automation and +4 skills
+LangChain logo
+
+LangChain Essentials
+
+LangChain
+
+Issued Oct 2026
+
+Credential ID xhcrrhmmsb
+Show credential
+
+ Agentic Workflows, Agentic AI Development and +3 skills
+
+Licenses & certifications
+LangChain logo
+
+Introduction to Deep Agents
+
+LangChain
+
+Issued Oct 2026
+
+Credential ID dohx9ygvep
+Show credential
+
+Harness Engineering and Harness Design
+
+Anthropic logo
+
+Claude Academy: Claude Code in Action
+
+Anthropic
+
+Issued Sep 2026
+
+Credential ID 31086a599e7fbf2bfe7a4c819e785351
+Show credential
+
+Skills: Agentic Workflows, Agentic AI Development
+Anthropic logo
+
+Claude Academy: Claude Code 101
+
+Anthropic
+
+Issued Sep 2026
+
+Credential ID 45f04462c6d29fa17b41e9bb60dc78b8
+Show credential
+
+Skills: Agentic AI Development, Agentic Workflows
+Anthropic logo
+
+Model Context Protocol: Advanced Topics
+
+Anthropic
+
+Issued Sep 2026
+
+Credential ID mve8qaa5xpnn
+Show credential
+
+Skills: Model Context Protocol (MCP)
+Anthropic logo
+
+Introduction to Model Context Protocol
+
+Anthropic
+
+Issued Aug 2026
+
+Credential ID tp92u33vai5k
+Show credential
+
+Skills: Model Context Protocol (MCP)
+Anthropic logo
+
+Certificate of completion: Introduction to subagents
+
+Anthropic
+
+Issued Jul 2026
+
+Credential ID hsm6juzm25sx
+Show credential
+
+Skills: AI Subagents
+
+System Design Fundamentals
+
+Pearson
+
+Issued Jul 2026
+
+Credential ID NRWRXRWAFOEW
+Show credential
+
+Skills: Systems Design, Software Design, +1 skill
+Anthropic logo
+
+Certificate of completion: AI Capabilities and Limitations
+
+Anthropic
+
+Issued Jun 2026
+
+Credential ID p3tw8kpsj6zi
+Show credential
+
+Skills: AI Fluency, AI Integration
+Anthropic logo
+
+Certificate of Completion: AI Fluency for Small Businesses
+
+Anthropic
+
+Issued Jun 2026
+
+Credential ID 4j8dbbn4g7mr
+Show credential
+
+Skills: AI Fluency, Small Business, +1 skill
+Anthropic logo
+
+Certificate of completion: Introduction to agent skills
+
+Anthropic
+
+Issued Jun 2026
+
+Credential ID kimyqxszt4hd
+Show credential
+
+Skills: Agentic Workflows, Agentic AI Development, +1 skill
+MITx MicroMasters® Programs logo
+
+6.431x: Probability - The Science of Uncertainty and Data
+
+MITx MicroMasters® Programs
+
+Issued May 2026
+
+Credential ID 8bb195a060f7443e85b1c21b447bdc7b
+Show credential
+
+Skills: Probability Theory, Applied Probability, +1 skill
+Anthropic logo
+
+Certificate of Completion: Al Fluency Framework & Foundations
+
+Anthropic
+
+Issued May 2026
+
+Credential ID sk6tqfk65qzj
+Show credential
+
+Skills: Artificial Intelligence (AI), Large Language Models (LLM), +1 skill
+UC San Diego logo
+
+ALGS203x: Algorithms for NP-complete Problems
+
+UC San Diego
+
+Issued Aug 2025
+
+Credential ID a7a7dcf6432d4ba1b9afb3fe34ca7855
+Show credential
+
+Skills: Algorithm Design, Heuristics, +1 skill
+The Linux Foundation logo
+
+LFW111: Introduction to Node.js
+
+The Linux Foundation
+
+Issued Jan 2026
+
+Credential ID LF-icemx3g8ej
+Show credential
+
+Skills: Node.js, JavaScript
+Arizona State University logo
+
+CSE 330: Operating Systems
+
+Arizona State University
+
+Issued Jun 2025
+
+Credential ID https://badgr.com/public/assertions/Lp_1kREKRyasrVTSwW6FQg
+Show credential
+
+Skills: Operating Systems
+UC San Diego logo
+
+ALGS202x: Graph Algorithms
+
+UC San Diego
+
+Issued Feb 2025
+
+Credential ID 8e4c59e53b9342eea5958b1751ec8ef1
+Show credential
+
+Skills: Algorithm Design, Software Development, +2 skills
+UC San Diego logo
+
+ALGS201x: Data Structures Fundamentals
+
+UC San Diego
+
+Issued Sep 2024
+
+Credential ID a01572f3ebb2406abfec3e9f030240dc
+Show credential
+
+Skills: Software Development, Algorithms, +2 skills
+UC San Diego logo
+
+ALGS200x: Algorithmic Design and Techniques
+
+UC San Diego
+
+Issued Jun 2024
+
+Credential ID a01572f3ebb2406abfec3e9f030240dc
+Show credential
+
+Skills: Algorithm Design, Software Development, +2 skills
+RWTH Aachen University logo
+
+BAI003x: Reinforcement Learning
+
+RWTH Aachen University
+
+Issued Dec 2024
+
+Credential ID 954fcd5a9dba4339bdba1c3602cdb35f
+Show credential
+
+Skills: Deep Reinforcement Learning, Reinforcement Learning
+University of California, Berkeley logo
+
+CS198.1x: Bitcoin and Cryptocurrencies
+
+University of California, Berkeley
+
+Issued Jan 2024
+
+Credential ID 56884eed349043acbdab1aff8427eaa9
+Show credential
+
+Skills: Cryptocurrency, Blockchain
+MITx MicroMasters® Programs logo
+
+15.415.2x: Foundations of Modern Finance II
+
+MITx MicroMasters® Programs
+
+Issued Apr 2024
+
+Credential ID 55c979cf242a415aa66cb61d36eb3b94
+Show credential
+
+Skills: Stock Market Analysis, Financial Analysis, +4 skills
+MITx MicroMasters® Programs logo
+
+15.415.1x: Foundations of Modern Finance I
+
+MITx MicroMasters® Programs
+
+Issued Dec 2023
+
+Credential ID 6eceb468dd0c44a4a189809db4102c57
+Show credential
+
+Skills: Stock Market Analysis, Financial Analysis, +4 skills
+Saïd Business School, University of Oxford logo
+
+Oxford Algorithmic Trading Programme
+
+Saïd Business School, University of Oxford
+
+Issued Jan 2024
+
+Credential ID 93377157
+Show credential
+
+Skills: Algorithmic Trading, Behavioral Finance, +1 skill
+Harvard Online logo
+
+LBTechX1: Technology Entrepreneurship: Lab to Market
+
+Harvard Online
+
+Issued May 2023
+
+Credential ID b7ee42e47a5146ed8d7bde92eaed5bf7
+Show credential
+
+Skills: Entrepreneurship
+New York Institute of Finance logo
+
+ETFM2016x: Electronic Trading in Financial Markets
+
+New York Institute of Finance
+
+Issued Jan 2023
+
+Credential ID 8251ab56baf74752a54aedef42f896ca
+Show credential
+
+Skills: Market Microstructure
+MITx MicroMasters® Programs logo
+
+15.455x: Mathematical Methods for Quantitative Finance
+
+MITx MicroMasters® Programs
+
+Issued Jan 2023
+
+Credential ID 95c490b2889f4967aa704c36360ad14b
+Show credential
+
+Skills: Optimization, Financial Analysis, +6 skills
+Stanford Online logo
+
+CSX0005 : Automata Theory | Theory of Computation
+
+Stanford Online
+
+Issued Aug 2022
+
+Credential ID 6526d908564047f896d6a7aec214106f
+Show credential
+
+Skills: Automata, Regular Expressions, +1 skill
+Indian Institute of Technology, Bombay logo
+
+Linux101.1x : Shell Programming
+
+Indian Institute of Technology, Bombay
+
+Issued Jan 2022
+
+Credential ID 3ac9d51cc10d42088dda3cfeb8f74931
+Show credential
+
+Skills: Software Development, Bash, +2 skills
+MITx Courses logo
+
+6.00x : Computational Thinking using Python
+
+MITx Courses
+
+Issued May 2021
+
+Credential ID b6064710adef432e93a2c49849ffde00
+Show credential
+
+Skills: Software Development, Programming, +2 skills
+MITx MicroMasters® Programs logo
+
+6.86x : Machine Learning with Python - From Linear Models to Deep Learning
+
+MITx MicroMasters® Programs
+
+Issued Dec 2020
+
+Credential ID d103b21619db422c98ada4f21a1663bd
+Show credential
+
+Skills: Software Development, Natural Language Processing (NLP), +7 skills
+Who your viewers also viewed
+
+Private to you
+
+Kanchan Nath 
+
+· 3rd
+
+Full Stack Developer | Expertise in React , Node.js , PostgreSQL , MongoDB , Javascript
+Message
+
+Yvonne Achancho 
+
+· 3rd
+
+Finance & 3+3 Law @ Syracuse University | Aspiring AI & IP Lawyer | AI & Data‑Driven Markets
+Message
+
+Manuel Ritsch 
+
+· 2nd
+
+Advising Portfolio Manager | Global Macro Research
+
+Joseph Argiro 
+
+· 2nd
+
+Founder @ Fish Network | Trust Infrastructure for Private Markets
+
+Gladys Choque Ulloa 
+
+· 2nd
+
+Doctoral Student in Computer Science | Master’s in Statistics | Lic. in Statistics | Data Scientist | Research | Machine Learning | Deep Learning | WIDS Ambassador | Founder of Women in DataLab | LinkedIn Top Voice
+
+About
+
+Accessibility
+
+Talent Solutions
+
+Community Guidelines
+
+Careers
+
+Marketing Solutions 
+
+Privacy & Terms
+
+Ad Choices
+
+Advertising
+
+Sales Solutions
+
+Mobile
+
+Small Business
+
+Safety Center
+
+LinkedIn Corporation © 2026
+
+Questions?
+
+Visit our Help Center.
+
+Manage your account and privacy
+
+Go to your Settings.
+
+Recommendation transparency
+
+Learn more about Recommended Content.
+
+Select language
+Claudio Catalani
+Status is online
+

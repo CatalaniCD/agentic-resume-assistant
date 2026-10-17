@@ -1,0 +1,69 @@
+﻿Claudio Catalani
+Quantitative Finance & Algorithmic Systems Developer
+
+
+Location: Rosario, Argentina 
+Phone: +543417420129
+Email: catalaniclaudiodamian@gmail.com
+GitHub: https://github.com/CatalaniCD 
+LinkedIn: https://www.linkedin.com/in/claudio-dami%C3%A1n-catalani-0bb814181/
+Website: https://quant-solutions.pages.dev/ 
+
+
+Professional Summary
+Disciplined engineer with MIT/Oxford/Berkeley training and 5+ years building production-grade algorithmic trading systems, execution infrastructure, and data pipelines for startup hedge funds and fintech clients. Former Argentine Navy Officer (Frigate Lieutenant) with strong systems engineering foundation. Expert in solving complex, high-stakes problems through first-principles reasoning, rigorous optimization, and reliable automation. Comfortable designing software architectures, refactoring code, reviewing technical solutions, and delivering measurable results under pressure.
+Core Competencies
+Engineering & Problem-Solving
+* First-principles analysis and decomposition of complex systems
+* Optimization under uncertainty and resource constraints
+* Refactoring and hardening AI-generated / legacy code
+* Test-driven development, debugging, and performance tuning
+* Multithreading, asyncio, multiprocessing for scalable systems
+Programming & Technical Stack
+* Languages: Python 6+ (expert), JavaScript, R, Bash/Shell, HTML/CSS, Pine Script
+* Frameworks & Libraries: Flask, Node.js, scikit-learn, PyTorch, Keras, Pandas, NumPy, Matplotlib, Seaborn, Pytest
+* Infrastructure: Docker, Git, CI/CD, PostgreSQL
+* Trading & Data: ccxt, IBKR API, Binance API, TA-Lib, Polygon.io, Yahoo Finance, Glassnode
+Quantitative & Financial Engineering
+* Reinforcement Learning & Decision-Making
+* Backtesting (walk-forward, Monte Carlo, regime detection)
+* Portfolio & Risk Optimization (factor models, hedging, volatility targeting)
+* Signal Generation & Predictive Modeling
+* Real-time Execution & Monitoring
+Professional Experience
+Independent Quantitative Developer (Upwork – Top Rated Plus)
+2018 – Present | 1,032+ hours | 100% Job Success | $60K+ earned
+* Designed reinforcement learning agents and predictive models for live trading across crypto, prediction markets, equities, and futures.
+* Built robust execution engines, backtesting frameworks, and real-time dashboards — reducing slippage and drawdowns for clients.
+* Refactored and optimized AI-generated code (Claude/Grok/ChatGPT) for fintech and prop trading teams, ensuring production reliability.
+* Delivered end-to-end solutions: strategy research, ML signal pipelines, broker integrations (IBKR, Binance, ccxt), and alert systems.
+Private Contractor – Quant Finance Developer
+Oct 2021 – Feb 2022 | Arizona, USA | +$10M fund
+* Developed bulk trading strategies using genetic algorithms and massive data exploitation to maximize risk-adjusted returns.
+* Reviewed, refactored, and optimized team codebases; provided technical mentorship on finance and quantitative topics.
+AlgoStorm – Quant Finance Developer & Partner
+Jun 2021 – Oct 2021 | Malaysia
+* Researched and implemented cryptocurrency trading strategies and execution logic.
+* Solved complex data analysis and automation challenges in volatile markets.
+Argentine Navy – Frigate Lieutenant (OF-2)
+2011 – 2019 | Argentina
+* Commanded weapons and navigation systems on warships in the South Atlantic.
+* Applied engineering mathematics, simulation modeling, and real-time decision-making in mission-critical environments.
+Education & Rigorous Training (All proctored/verified where applicable)
+Naval University Institute
+Master’s in Naval Weapons Systems | 2014
+Bachelor’s in Naval Resources Administration | 2007–2011
+
+
+Massachusetts Institute of Technology (MITx), Mathematical Methods for Quantitative Finance, Foundations of Modern Finance, Machine Learning, Computer Science
+University of Oxford Algorithmic Trading Programme | 2023
+University of California, Berkeley Bitcoin and Cryptocurrencies
+Stanford University Theory of Computation | 2022
+UC San Diego Algorithms and Data Structures + NP-Problems | 2024
+ASU Operating Systems
+Additional Verified Training ARM Microprocessors & Computer Architecture, Linux Shell Programming, Electronic Trading in Financial Markets (NYIF), etc.
+
+
+Languages
+English – Fluent
+Spanish – Native

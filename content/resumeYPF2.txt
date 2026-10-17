@@ -1,0 +1,88 @@
+﻿CLAUDIO CATALANI
+Desarrollador de Sistemas · IA & Data Science · Forward Deployed Engineer
+catalaniclaudiodamian@gmail.com | linkedin.com/in/claudio-catalani-quant
+Rosario, Santa FeDisponibilidad inmediata para modalidad híbrida 4x1 en Puerto Madero / CABA
+
+
+RESUMEN PROFESIONAL
+Profesional de Tecnología, Data e Inteligencia Artificial con más de 5 años diseñando e implementando sistemas productivos de punta a punta. Combino arquitectura de software, pipelines de datos, Machine Learning e IA Generativa (incluyendo agentes, arquitecturas multiagente y Claude Code) para transformar datos complejos en información accionable y soluciones digitales de alto impacto.
+
+
+Experiencia real aplicando Machine Learning a soluciones financieras en producción y trabajando en entornos de software factories. En rol de Forward Deployed Engineer evalúo negocios y procesos para identificar vectores de utilidad e implemento IA agéntica, automatización y aplicaciones orientadas a maximizar productividad y optimizar procesos. Formación avanzada a través de MicroMasters en Finance y Data Science (MIT – en finalización). Busco aportar esta capacidad técnica y de entrega en entornos de transformación digital como YPF.
+
+
+COMPETENCIAS CLAVE
+Inteligencia Artificial & Data Science: Machine Learning, Deep Learning, Reinforcement Learning, IA Generativa, LLMs, Prompt Engineering, Agentes de IA, AI Subagents, Arquitecturas Multiagente, Claude Code, AI Fluency, Model Context Protocol (MCP)
+
+
+Desarrollo & Arquitectura: Python, SQL, Pipelines de Datos, Diseño de Sistemas, Arquitectura de Software, Node.js, Shell, Linux, Software Factories
+
+
+Analítica & Productividad: Analítica avanzada, Modelado predictivo, Optimización de procesos, Validación out-of-sample, Automatización, Evaluación de vectores de utilidad de negocio, Calidad e integridad de datos
+
+
+DISPUESTO A APRENDER / EN DESARROLLO
+PySpark, Power BI, DAX, Power Query, Microsoft Fabric, Power Automate
+
+
+IDIOMAS
+Español (Nativo) · Inglés (Profesional completo) 
+Experiencia laboral y formación técnica desarrollada íntegramente en inglés (contratos con EE.UU. y Asia, cursos MIT, Oxford, Anthropic, etc.).
+
+
+
+
+
+
+
+
+EXPERIENCIA PROFESIONAL
+
+
+Forward Deployed Engineer — Bocho (Trabajo Inteligente) | 2026 – Actualidad | Rosario / San Lorenzo
+Evalúo negocios y procesos para identificar vectores de utilidad e implemento soluciones de IA agéntica y automatización orientadas a maximizar productividad.
+Casos recientes:
+• Empresa de logística: apertura de nuevo flujo de caja y aceleración de la ejecución diaria de tareas mediante automatización con IA agéntica (equivalente a evitar la contratación de 3 personas adicionales).
+• Empresa de andamios eléctricos: maximización del alcance de 2 managers en administración de RR.HH. y contratos de materiales, generando un ahorro de 6 horas semanales por manager.
+Diseño e implemento productos digitales robustos, explicables y listos para producción, garantizando calidad e integridad de los datos.
+Website: bocho.work
+Proyecto Especializado — Quant-Studio | 2026 – Actualidad | Rosario
+Desarrollo de sistemas de Machine Learning e IA Generativa aplicados a finanzas y operaciones (pipelines de datos, modelado predictivo y optimización).
+Website: quant-studio.pages.dev
+Desarrollador Cuantitativo & Tecnológico Independiente | 2015 – 2026 | Argentina e Internacional
+Diseñé e implementé sistemas productivos que integran Machine Learning, análisis de series temporales y optimización para transformar datos en decisiones de alto impacto. Construí pipelines de datos, modelos y capas de ejecución end-to-end.
+Trabajé en entornos de software factories, supervisando equipos de desarrollo y colaborando con contrapartes de Estados Unidos y Asia. Experiencia real aplicando Machine Learning a soluciones financieras en producción, con validación out-of-sample y walk-forward.
+
+
+Analista y Desarrollador Cuantitativo — Contratista | 2021 – 2022 | Estados Unidos
+Desarrollé estrategias y sistemas de ejecución basados en datos y modelos de IA. Trabajé con grandes volúmenes de información, lideré aspectos técnicos del desarrollo de software y supervisé equipos en un entorno de alta exigencia de entrega.
+
+
+Oficial de Cubierta / Oficial de Armas — Armada Argentina | 2011 – 2019
+Lideré equipos de entre 6 y 16 personas en operaciones de alta exigencia. Experiencia en mantenimiento de sistemas complejos, entrenamiento de personal y toma de decisiones bajo presión.
+
+
+
+
+
+
+
+
+
+
+FORMACIÓN Y CERTIFICACIONES DESTACADAS
+MicroMasters in Finance — MIT (en finalización)
+MicroMasters in Data Science — MIT (en finalización)
+Oxford Algorithmic Trading Programme — Saïd Business School, University of Oxford (2024)
+Mathematical Methods for Quantitative Finance — MITx
+Machine Learning with Python – From Linear Models to Deep Learning — MITx
+Probability – The Science of Uncertainty and Data — MITx
+Reinforcement Learning — RWTH Aachen University
+Introduction to Subagents + Introduction to Skills + AI Fluency Framework & Foundations + AI Capabilities and Limitations + Claude Code + Model Context Protocol — Anthropic
+Algorithmic Design and Techniques + Data Structures + Graph Algorithms — UC San Diego
+System Design Fundamentals — Pearson
+Licenciatura en Administración de Recursos Navales para la Defensa — Instituto Universitario Naval
+Posgrado en Sistemas de Armas Navales
+Formación afín a Ingeniería / Sistemas / Data Science (complementada con MicroMasters MIT en Data Science y Finance)
+Enfoque
+Desarrollo de soluciones tecnológicas basadas en datos e inteligencia artificial con rigor: sistemas que puedo explicar, validar y poner en producción. Perfil técnico, orientado a resultados e impacto de negocio, con experiencia real en Machine Learning aplicado a finanzas y en la implementación de IA agéntica para maximizar productividad y optimizar procesosClaudio Damián Catalani

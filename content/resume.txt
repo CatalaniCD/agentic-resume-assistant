@@ -1,0 +1,139 @@
+# Claudio Catalani
+
+**Systems Designer & Tech Lead — AI · Data · Python · Node.js | Forward Deployed Engineer**
+Quantitative Developer · Quantitative Trader · AI & High-Performance Systems
+
+Location: Rosario, Santa Fe, Argentina (open to remote / hybrid / relocation)
+Email: catalaniclaudiodamian@gmail.com
+LinkedIn: linkedin.com/in/claudio-catalani-quant
+GitHub: github.com/CatalaniCD
+Websites: quant-studio.pages.dev · bocho.work
+
+## Professional Summary
+
+Claudio Catalani is a Quantitative Developer and Forward Deployed Engineer with 6+ years
+designing, building, and running production systems end-to-end — from data ingestion and
+feature engineering through modeling, execution, and monitoring. He combines advanced
+quantitative methods (asset pricing, alpha research, statistical arbitrage, portfolio
+construction, walk-forward and out-of-sample validation) with production-grade software
+engineering and modern AI (LLMs, agents, multi-agent architectures, MCP, and Claude Code).
+He holds MicroMasters in Finance and Data Science from MIT (in progress) and the Oxford
+Algorithmic Trading Programme, on top of earlier degrees from the Naval University
+Institute. A former Argentine Navy officer, he brings first-principles reasoning, process
+discipline, and calm decision-making under pressure. He builds systems he can explain,
+validate, and reliably operate, and is comfortable designing architectures, refactoring
+AI-generated code, reviewing technical solutions, and delivering measurable business impact.
+He has mentored engineers, taught finance and quantitative topics, and conducts all technical
+work and professional communication in English across engagements with the United States and Asia.
+
+## Core Competencies
+
+- **AI & Data Science:** Machine Learning, Deep Learning, Reinforcement Learning, Generative
+  AI / LLMs, prompt engineering, AI agents, subagents, multi-agent architectures, AI Fluency,
+  Model Context Protocol (MCP), Claude Code; production ML deployment.
+- **Quantitative Research & Trading:** asset pricing, alpha research, time-series analysis,
+  statistical arbitrage, portfolio optimization, factor models, risk management, walk-forward /
+  Monte Carlo / out-of-sample validation, regime detection, signal generation, execution quality.
+- **Engineering & Infrastructure:** Python (expert), JavaScript / Node.js, SQL / PostgreSQL, R,
+  asyncio, multithreading and multiprocessing, data pipelines and ETL, system design and
+  architecture, Docker, Git, CI/CD, Linux / Shell, AWS (EC2, Lambda), Cloudflare (Workers,
+  Pages), Vultr, test-driven development, debugging and performance tuning.
+- **Trading Systems & Markets:** event-driven backtesting, FSM execution engines, asyncio
+  WebSocket servers, order management, audit trails, real-time risk controls; exchange
+  integrations — Binance, Bybit, IBKR, ccxt, Kalshi, Polymarket; prediction-market odds
+  pricing; cross-venue normalization; TA-Lib, Polygon.io, Glassnode, Yahoo Finance.
+- **Blockchain:** Bittensor subnet; crypto market APIs.
+- **Languages:** Spanish (native); English (full professional).
+
+## Professional Experience
+
+### Forward Deployed Engineer — Bocho (Trabajo Inteligente) | 2026 – Present | Rosario / San Lorenzo
+Evaluates business processes to identify value vectors and implements agentic AI and
+automation to maximize productivity. Recent cases: a logistics company where agentic
+automation opened a new cash-flow stream and accelerated daily task execution (equivalent to
+avoiding three additional hires), and an electric-scaffolding company where automation of HR
+and materials-contract administration saved each of two managers six hours per week. Designs
+robust, explainable, production-ready digital products with strong data quality and integrity.
+Website: bocho.work.
+
+### Founder — Quant-Studio | 2026 – Present | Rosario
+Designs and operates AI-powered quantitative research and trading systems, covering the full
+pipeline from data ingestion and feature engineering to model development, signal generation,
+portfolio construction, and live execution. Focuses on robust, explainable systems with strict
+validation and production reliability. Website: quant-studio.pages.dev.
+
+### Quantitative Developer & Independent Trader | 2015 – 2026 | Argentina & International
+Designed, implemented, and ran production trading systems using quantitative and machine-learning
+methods for asset pricing and high-frequency decision-making. Built end-to-end infrastructure —
+data pipelines, research environment, event-driven backtesting engine, optimization layer, and
+live execution — with continuous performance monitoring and risk controls. Supervised development
+teams and collaborated remotely with counterparties in the United States and Asia. On Upwork
+(2018–present) rated Top Rated Plus with 1,000+ hours, 100% job success, and $60K+ earned,
+delivering reinforcement-learning agents and predictive models for crypto, prediction markets,
+equities, and futures; refactoring AI-generated code for fintech and prop-trading teams; and
+integrating brokers (IBKR, Binance, ccxt) with alerting and dashboards.
+
+### Quantitative Analyst & Developer — Contractor | 2021 – 2022 | United States
+Developed data-driven trading strategies and execution systems using genetic algorithms and
+large-scale data exploitation to maximize risk-adjusted returns, for a fund with $10M+ under
+management. Worked with large-scale market data, led the technical side of software development,
+refactored and optimized team codebases, and provided mentorship on finance and quantitative topics.
+
+### Quant Finance Developer & Partner — AlgoStorm | Jun – Oct 2021 | Malaysia
+Researched and implemented cryptocurrency trading strategies and execution logic, solving complex
+data-analysis and automation challenges in highly volatile markets.
+
+### Deck Officer / Weapons Officer — Argentine Navy | 2011 – 2019
+Frigate Lieutenant (OF-2). Commanded weapons and navigation systems on warships in the South
+Atlantic, leading teams of 6–16 people in mission-critical operations. Applied engineering
+mathematics, simulation modeling, and real-time decision-making, with deep experience in
+complex-systems maintenance, personnel training, and accountability under pressure.
+
+## Selected Projects & Highlights
+
+- Built and operated end-to-end systematic trading systems spanning crypto, prediction markets,
+  equities, and futures — data pipelines, research, event-driven backtesting, portfolio
+  construction, and asyncio live execution with real-time monitoring.
+- Developed reinforcement-learning agents and predictive models deployed to live trading, using
+  walk-forward and Monte Carlo validation to control drawdown and slippage.
+- Refactored and hardened AI-generated (Claude, Grok, ChatGPT) and legacy codebases for fintech
+  and prop-trading teams, improving production reliability.
+- Delivered agentic AI automation for logistics and industrial clients, translating business
+  processes into measurable productivity and cost savings.
+- Created real-time dashboards, alerting, and broker integrations (IBKR, Binance, ccxt) end-to-end,
+  from strategy research to execution.
+
+## Education
+
+- **MicroMasters in Finance — MIT (MITx MicroMasters), in progress.**
+- **MicroMasters in Data Science — MIT (MITx MicroMasters), in progress.**
+- **Oxford Algorithmic Trading Programme — Saïd Business School, University of Oxford (2023/2024).**
+- **Master's in Naval Weapons Systems — Naval University Institute (2014).**
+- **Bachelor's in Naval Resources Administration for Defense — Naval University Institute (2007–2011).**
+
+## Certifications & Verified Training (selected)
+
+- **MITx / MIT:** Mathematical Methods for Quantitative Finance; Foundations of Modern Finance I
+  and II (proctored); Machine Learning with Python — From Linear Models to Deep Learning;
+  Introduction to Computer Science and Programming Using Python; Computational Thinking and Data
+  Science; Probability — The Science of Uncertainty and Data.
+- **Computer Science / Math:** Automata Theory (Stanford Online); Algorithmic Design and
+  Techniques, Data Structures Fundamentals, Graph Algorithms, and NP-Complete Problems (UC San
+  Diego); Reinforcement Learning (RWTH Aachen); Bitcoin and Cryptocurrencies (UC Berkeley);
+  Operating Systems (Arizona State University).
+- **Finance:** Electronic Trading in Financial Markets (NYIF); Oxford Algorithmic Trading Programme.
+- **Entrepreneurship:** Technology Entrepreneurship: Lab to Market (HarvardX); The Start-up CFO;
+  Venture Capital (RWTH Aachen).
+- **Systems / Arm / Linux:** Computer Architecture Essentials on Arm; Introduction to
+  Microprocessors; Git for Distributed Software Development; Introduction to Node.js (Linux
+  Foundation); Shell Programming (IIT Bombay).
+- **AI / Anthropic (Claude Academy):** Claude Code 101 and Claude Code in Action; Introduction to
+  Model Context Protocol and MCP Advanced Topics; Introduction to Subagents; Introduction to Agent
+  Skills; AI Fluency Framework & Foundations; AI Capabilities and Limitations. **LangChain:**
+  LangChain Essentials; LangGraph Essentials; Introduction to Deep Agents. **Pearson:** System
+  Design Fundamentals.
+
+## Availability
+
+Open to AI Engineer, Quantitative Developer, Quantitative Researcher, Quantitative Trader, and
+Forward Deployed Engineer roles — remote, hybrid, or relocation.

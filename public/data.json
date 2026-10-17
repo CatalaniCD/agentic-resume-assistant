@@ -1,0 +1,138 @@
+{
+  "name": "Claudio Catalani",
+  "title": "Quantitative Developer | AI Engineer",
+  "location": "Rosario, Santa Fe, Argentina · Remote / Hybrid / Relocation",
+  "bio": "Quantitative developer and forward deployed engineer with 6+ years building production systems end-to-end — data pipelines, machine learning, execution and monitoring. Blends quantitative research (asset pricing, statistical arbitrage, portfolio optimization, rigorous out-of-sample validation) with production engineering and modern AI (LLMs, agents, MCP, Claude Code). Former Argentine Navy officer, with MIT MicroMasters in Finance and Data Science and the Oxford Algorithmic Trading Programme.",
+  "bio_es": "Desarrollador cuantitativo e ingeniero forward deployed con más de 6 años construyendo sistemas productivos de punta a punta: pipelines de datos, machine learning, ejecución y monitoreo. Combina investigación cuantitativa (asset pricing, arbitraje estadístico, optimización de carteras, validación out-of-sample rigurosa) con ingeniería productiva e IA moderna (LLMs, agentes, MCP, Claude Code). Ex oficial de la Armada Argentina, con MicroMasters del MIT en Finanzas y Data Science y el Oxford Algorithmic Trading Programme.",
+  "photo": "/profile.png",
+  "skills": {
+    "infrastructure": [
+      "Python", "JavaScript / Node.js", "SQL / PostgreSQL", "R", "Bash / Shell",
+      "Data Pipelines", "System Design", "Docker", "Git", "CI/CD",
+      "Linux", "AWS (EC2, Lambda)", "Cloudflare Workers & Pages", "Vultr"
+    ],
+    "ai": [
+      "Machine Learning", "Deep Learning", "Reinforcement Learning", "Generative AI / LLMs",
+      "Prompt Engineering", "AI Agents", "Subagents", "Multi-Agent Architectures",
+      "Claude Code", "Model Context Protocol (MCP)", "LangChain", "Production ML Deployment"
+    ],
+    "quant": [
+      "Asset Pricing", "Alpha Research", "Time-Series Analysis", "Statistical Arbitrage",
+      "Portfolio Optimization", "Factor Models", "Risk Management",
+      "Backtesting (Walk-Forward, Monte Carlo)", "Execution Systems",
+      "Prediction Markets (Kalshi, Polymarket)", "Market Microstructure", "Binance / IBKR / ccxt"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Bocho (Trabajo Inteligente)",
+      "company_es": "Bocho (Trabajo Inteligente)",
+      "role": "Forward Deployed Engineer",
+      "role_es": "Forward Deployed Engineer",
+      "period": "2026 – Present",
+      "location": "Rosario / San Lorenzo",
+      "location_es": "Rosario / San Lorenzo",
+      "achievements": [
+        "Implement agentic AI automation to identify value vectors and boost productivity",
+        "Clients in logistics and industry: opened new cash-flow streams and saved 6+ hours per week per manager"
+      ],
+      "achievements_es": [
+        "Implemento automatización con IA agéntica para identificar vectores de utilidad y aumentar productividad",
+        "Clientes de logística e industria: abrí nuevos flujos de caja y ahorré más de 6 horas semanales por manager"
+      ],
+      "technologies": ["Agentic AI", "LLMs", "Automation", "Python", "Node.js"]
+    },
+    {
+      "company": "Quant-Studio",
+      "company_es": "Quant-Studio",
+      "role": "Founder",
+      "role_es": "Fundador",
+      "period": "2026 – Present",
+      "location": "Rosario",
+      "location_es": "Rosario",
+      "achievements": [
+        "Design and operate AI-powered quantitative research and trading systems",
+        "Build full pipelines from data ingestion and modeling to signal generation and live execution"
+      ],
+      "achievements_es": [
+        "Diseño y opero sistemas de investigación cuantitativa y trading impulsados por IA",
+        "Construyo pipelines completos, desde la ingesta y el modelado hasta las señales y la ejecución en vivo"
+      ],
+      "technologies": ["Python", "Machine Learning", "LLMs", "asyncio"]
+    },
+    {
+      "company": "Independent / Upwork (Top Rated Plus)",
+      "company_es": "Independiente / Upwork (Top Rated Plus)",
+      "role": "Quantitative Developer & Independent Trader",
+      "role_es": "Desarrollador Cuantitativo & Trader Independiente",
+      "period": "2015 – 2026",
+      "location": "Argentina & International",
+      "location_es": "Argentina e Internacional",
+      "achievements": [
+        "Built and ran production trading systems with quantitative and ML methods across crypto, prediction markets, equities and futures",
+        "Upwork Top Rated Plus: 1,000+ hours, 100% job success, $60K+ earned"
+      ],
+      "achievements_es": [
+        "Construí y operé sistemas de trading productivos con métodos cuantitativos y de ML en cripto, mercados de predicción, acciones y futuros",
+        "Upwork Top Rated Plus: más de 1.000 horas, 100% de éxito y más de US$60K facturados"
+      ],
+      "technologies": ["Python", "asyncio", "Backtesting", "IBKR / Binance / ccxt"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "MicroMasters in Finance & Data Science",
+      "degree_es": "MicroMasters en Finanzas y Data Science",
+      "institution": "MIT (MITx MicroMasters)",
+      "institution_es": "MIT (MITx MicroMasters)",
+      "year": "In progress",
+      "details": "Also Oxford Algorithmic Trading Programme (2024)",
+      "details_es": "También Oxford Algorithmic Trading Programme (2024)"
+    }
+  ],
+  "certificates": [
+    { "name": "LangChain Essentials", "name_es": "LangChain Essentials", "year": "2026", "issuer": "LangChain" },
+    { "name": "LangGraph Essentials", "name_es": "LangGraph Essentials", "year": "2026", "issuer": "LangChain" },
+    { "name": "Introduction to Deep Agents", "name_es": "Introducción a Deep Agents", "year": "2026", "issuer": "LangChain" },
+    { "name": "Mathematical Methods for Quantitative Finance", "name_es": "Métodos Matemáticos para Finanzas Cuantitativas", "year": "2023", "issuer": "MITx" },
+    { "name": "Foundations of Modern Finance I & II (proctored)", "name_es": "Fundamentos de Finanzas Modernas I y II (con examen)", "year": "2023–2024", "issuer": "MITx" },
+    { "name": "Machine Learning with Python — From Linear Models to Deep Learning", "name_es": "Machine Learning con Python — de modelos lineales a deep learning", "year": "2020", "issuer": "MITx" },
+    { "name": "Probability — The Science of Uncertainty and Data", "name_es": "Probabilidad — la ciencia de la incertidumbre y los datos", "year": "2026", "issuer": "MITx" },
+    { "name": "Reinforcement Learning", "name_es": "Reinforcement Learning", "year": "2024", "issuer": "RWTH Aachen University" },
+    { "name": "Algorithmic Design, Data Structures & Graph Algorithms", "name_es": "Diseño Algorítmico, Estructuras de Datos y Grafos", "year": "2024–2025", "issuer": "UC San Diego" },
+    { "name": "Claude Code, MCP, Subagents & Agent Skills", "name_es": "Claude Code, MCP, Subagentes y Agent Skills", "year": "2026", "issuer": "Anthropic (Claude Academy)" },
+    { "name": "System Design Fundamentals", "name_es": "Fundamentos de Diseño de Sistemas", "year": "2026", "issuer": "Pearson" },
+    { "name": "Electronic Trading in Financial Markets", "name_es": "Trading Electrónico en Mercados Financieros", "year": "2023", "issuer": "NYIF" }
+  ],
+  "projects": [
+    {
+      "name": "Quant-Studio",
+      "name_es": "Quant-Studio",
+      "description": "AI-powered quantitative research and trading platform: data ingestion, modeling, signal generation, portfolio construction and live execution.",
+      "description_es": "Plataforma de investigación cuantitativa y trading impulsada por IA: ingesta de datos, modelado, señales, construcción de carteras y ejecución en vivo.",
+      "tech": ["Python", "Machine Learning", "LLMs", "asyncio", "Cloudflare Pages"],
+      "link": "https://quant-studio.pages.dev"
+    },
+    {
+      "name": "Bocho — Agentic Automation",
+      "name_es": "Bocho — Automatización Agéntica",
+      "description": "Forward-deployed agentic AI automation for logistics and industrial clients, turning business processes into measurable productivity gains.",
+      "description_es": "Automatización con IA agéntica desplegada en clientes de logística e industria, convirtiendo procesos de negocio en mejoras medibles de productividad.",
+      "tech": ["Agentic AI", "LLMs", "Automation", "Python", "Node.js"],
+      "link": "https://bocho.work"
+    },
+    {
+      "name": "Systematic Trading & Execution Systems",
+      "name_es": "Sistemas de Trading Sistemático y Ejecución",
+      "description": "Event-driven backtesting, FSM execution engines, asyncio WebSocket servers and real-time risk controls across crypto, prediction markets, equities and futures.",
+      "description_es": "Backtesting orientado a eventos, motores de ejecución FSM, servidores WebSocket con asyncio y control de riesgo en tiempo real en cripto, mercados de predicción, acciones y futuros.",
+      "tech": ["Python", "asyncio", "WebSockets", "PostgreSQL", "ccxt"],
+      "link": ""
+    }
+  ],
+  "targetRoles": {
+    "en": ["AI Engineer", "Quantitative Developer", "Quantitative Researcher", "Quantitative Trader", "Forward Deployed Engineer"],
+    "es": ["Ingeniero de IA", "Desarrollador Cuantitativo", "Investigador Cuantitativo", "Trader Cuantitativo", "Forward Deployed Engineer"]
+  },
+  "languages": ["en", "es"]
+}

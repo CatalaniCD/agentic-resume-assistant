@@ -1,0 +1,323 @@
+Your certificates
+
+Your learner records information is only visible to you. Only your username and profile image are visible to others on edX.
+
+Verified Certificate
+
+Introduction to Computer Science and Programming Using Python
+
+From
+MITx
+
+Completed on 7/9/2020
+
+Credential ID 15956df7497a4455825b60a6126267c6
+
+Verified Certificate
+
+Machine Learning with Python-From Linear Models to Deep Learning
+
+From
+MITx
+
+Completed on 12/8/2020
+
+Credential ID d103b21619db422c98ada4f21a1663bd
+
+Verified Certificate
+
+Deep Learning Fundamentals with Keras
+
+From
+IBM
+
+Completed on 2/6/2021
+
+Credential ID cab03b2677004102b55f5e380524b8a6
+
+Verified Certificate
+
+Introduction to Computational Thinking and Data Science
+
+From
+MITx
+
+Completed on 5/13/2021
+
+Credential ID 2d96356d31074da29ffa0c5fc3eb193c
+
+Verified Certificate
+
+Programming Basics
+
+From
+IITBombayX
+
+Completed on 7/7/2021
+
+Credential ID 4cab293e13e04b558e0ffa3aed144247
+
+Verified Certificate
+
+Shell Programming - A necessity for all Programmers
+
+From
+IITBombayX
+
+Completed on 1/9/2022
+
+Credential ID 3ac9d51cc10d42088dda3cfeb8f74931
+
+Verified Certificate
+
+Automata Theory
+
+From
+StanfordOnline
+
+Completed on 8/28/2022
+
+Credential ID 6526d908564047f896d6a7aec214106f
+
+Professional Certificate
+
+Electronic Trading in Financial Markets
+
+From
+NYIF
+
+Completed on 1/13/2023
+
+Credential ID 8251ab56baf74752a54aedef42f896ca
+
+Verified Certificate
+
+Mathematical Methods for Quantitative Finance
+
+From
+MITx
+
+Completed on 1/25/2023
+
+Credential ID 95c490b2889f4967aa704c36360ad14b
+
+Verified Certificate
+
+Technology Entrepreneurship: Lab to Market
+
+From
+HarvardX
+
+Completed on 5/15/2023
+
+Credential ID b7ee42e47a5146ed8d7bde92eaed5bf7
+
+Verified Certificate
+
+Git for Distributed Software Development
+
+From
+LinuxFoundationX
+
+Completed on 9/12/2023
+
+Credential ID 95c36c0f400242b7a87aef8c8df64050
+
+Verified Certificate
+
+Advanced Algorithmics and Graph Theory with Python
+
+From
+IMTx
+
+Completed on 9/27/2023
+
+Credential ID b5d51866efd54a328d28226fc32411e9
+
+Verified Certificate
+
+Introduction to Microprocessors
+
+From
+ArmEducationX
+
+Completed on 11/8/2023
+
+Credential ID 4987b9fa4bc6481eaec29e11de16a714
+
+Verified Certificate
+
+Foundations of Modern Finance I
+
+From
+MITx
+
+Completed on 12/17/2023
+
+Credential ID aab2491224e049f091d730e0cc55da71
+
+Verified Certificate
+
+Foundations of Modern Finance I (with Proctored Final Exam)
+
+From
+MITx
+
+Completed on 12/18/2023
+
+Credential ID 6eceb468dd0c44a4a189809db4102c57
+
+Verified Certificate
+
+Computer Architecture Essentials on Arm
+
+From
+ArmEducationX
+
+Completed on 12/31/2023
+
+Credential ID dfb4403888e84b3d963e356904089a48
+
+Verified Certificate
+
+Bitcoin and Cryptocurrencies
+
+From
+BerkeleyX
+
+Completed on 3/30/2024
+
+Credential ID 56884eed349043acbdab1aff8427eaa9
+
+Verified Certificate
+
+Foundations of Modern Finance II
+
+From
+MITx
+
+Completed on 4/1/2024
+
+Credential ID 79ec2c772f0c45a1ac565cf0eb3553cc
+
+Verified Certificate
+
+Foundations of Modern Finance II (with Proctored Final Exam)
+
+From
+MITx
+
+Completed on 4/3/2024
+
+Credential ID 55c979cf242a415aa66cb61d36eb3b94
+
+Verified Certificate
+
+Algorithmic Design and Techniques
+
+From
+UCSanDiegoX
+
+Completed on 6/25/2024
+
+Credential ID df723fdc9e594a258896450cc1c084fe
+
+Verified Certificate
+
+Data Structures Fundamentals
+
+From
+UCSanDiegoX
+
+Completed on 9/12/2024
+
+Credential ID a01572f3ebb2406abfec3e9f030240dc
+
+Verified Certificate
+
+Reinforcement Learning
+
+From
+RWTHx
+
+Completed on 12/10/2024
+
+Credential ID 954fcd5a9dba4339bdba1c3602cdb35f
+
+Verified Certificate
+
+Graph Algorithms
+
+From
+UCSanDiegoX
+
+Completed on 2/27/2025
+
+Credential ID 8e4c59e53b9342eea5958b1751ec8ef1
+
+Verified Certificate
+
+The Start-up CFO
+
+From
+RWTHx
+
+Completed on 5/8/2025
+
+Credential ID 2bcab0b5342149d0b98d94c652906fb3
+
+Verified Certificate
+
+NP-Complete Problems
+
+From
+UCSanDiegoX
+
+Completed on 8/27/2025
+
+Credential ID a7a7dcf6432d4ba1b9afb3fe34ca7855
+
+Verified Certificate
+
+Venture Capital
+
+From
+RWTHx
+
+Completed on 12/1/2025
+
+Credential ID 26e84de8a2e84c8dbd2944ca9f84da3f
+
+Verified Certificate
+
+JavaScript Basics
+
+From
+UCDavis
+
+Completed on 1/14/2026
+
+Credential ID f36ec95889a643d1a4945a18aa7d0302
+
+Verified Certificate
+
+Data Manipulation in JavaScript
+
+From
+UCDavis
+
+Completed on 2/20/2026
+
+Credential ID 4436c8476c344dd0b6264dc8d0f25090
+
+Verified Certificate
+
+Probability - The Science of Uncertainty and Data
+
+From
+MITx
+
+Completed on 4/27/2026
+
+Credential ID 8bb195a060f7443e85b1c21b447bdc7b
+

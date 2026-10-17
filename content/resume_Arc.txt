@@ -1,0 +1,60 @@
+﻿CLAUDIO CATALANI
+Quantitative Developer · Quantitative Trader · AI & High-Performance Systems
+Rosario, Santa Fe, Argentina | Open to remote / hybrid / relocation
+catalaniclaudiodamian@gmail.com | linkedin.com/in/claudio-catalani-quant
+quant-studio.pages.dev
+
+
+PROFESSIONAL SUMMARY
+Quantitative Developer and Trader with 6+ years of experience designing, building and running production trading systems end-to-end. Strong background in asset pricing, signal generation, portfolio construction, execution systems and rigorous out-of-sample validation. Combines advanced quantitative methods with production-grade software engineering and modern machine learning / generative AI techniques. Holds MicroMasters in Finance and Data Science (MIT – in progress) and the Oxford Algorithmic Trading Programme. Proven ability to take research from idea to live execution with full responsibility for data pipelines, modeling, risk controls and performance monitoring. Expert in exchange integrations (Binance, Kalshi, Polymarket), implementing real-time WebSocket streams and asyncio execution engines.
+
+
+CORE COMPETENCIES
+Quantitative Research & Trading: Asset Pricing, Alpha Research, Time Series Analysis, Statistical Arbitrage, Portfolio Optimization, Walk-Forward & Out-of-Sample Validation, Execution Systems, Risk Management
+Machine Learning & AI: Supervised & Unsupervised Learning, Deep Learning, Ensemble Methods, Reinforcement Learning, Feature Engineering, Generative AI / LLMs for research automation, production ML deployment
+Engineering & Infrastructure: Python, SQL/PostgreSQL, Asyncio, Data Pipelines, High-Performance Systems, System Design, Backtesting Frameworks, Linux, Shell, Node.js, , AWS (EC2, Lambda), Cloudflare(Workers, Pages), Vultr (Servers, Managed DB’s), Linux, CI/CD
+Risk & Execution: Real-time controls, position tracking, automated execution, order management, exposure monitoring, compliance logging
+Prediction Markets: Kalshi, Polymarket odds pricing, Binance US, soccer data, 
+WebSocket/asyncio streams, order types, cross-venue normalization
+Trading Systems: Event-driven backtesting, FSM execution engines, asyncio WebSocket servers, audit trails, Markov chain signals, factor model pipelinest
+Blockchain: Bittensor subnet, crypto APIs (Binance, Bybit, etc.)
+Languages: Spanish (Native) · English (Full Professional – all technical work and professional communication conducted in English)
+
+
+PROFESSIONAL EXPERIENCE
+
+
+Founder — Quant-Studio | 2026 – Present | Rosario
+Design and operate AI-powered quantitative research and trading systems. Build complete pipelines from data ingestion and feature engineering through model development, signal generation, portfolio construction and live execution. Focus on robust, explainable systems with strict validation (walk-forward, out-of-sample) and production reliability.
+Website: quant-studio.pages.dev
+
+
+Quantitative Developer & Independent Trader | 2015 – 2026 | Argentina & International
+Designed, implemented and ran production trading systems using quantitative and machine learning methods for asset pricing and high-frequency decision making. Built end-to-end infrastructure: data pipelines, research environment, backtesting engine, optimization layer and live execution. Supervised development teams and collaborated remotely with counterparties in the United States and Asia.
+Key focus areas: systematic strategies, statistical methods, execution quality, risk controls and continuous performance monitoring.
+
+
+Quantitative Analyst & Developer — Contractor | 2021 – 2022 | United States
+Developed data-driven trading strategies and execution systems. Worked with large-scale market data, led technical aspects of software development, and supported strategy research and risk analysis in a high-performance trading environment.
+
+
+Deck Officer / Weapons Officer — Argentine Navy | 2011 – 2019
+Led teams of 6–16 people in high-stakes operational environments. Experience in complex systems maintenance, personnel training and decision-making under pressure. Developed strong discipline in process, risk management and accountability.
+
+
+EDUCATION & SELECTED CERTIFICATIONS
+MicroMasters in Finance — MIT (in progress)
+MicroMasters in Data Science — MIT (in progress)
+Oxford Algorithmic Trading Programme — Saïd Business School, University of Oxford (2024)
+Mathematical Methods for Quantitative Finance — MITx
+Machine Learning with Python – From Linear Models to Deep Learning — MITx
+Probability – The Science of Uncertainty and Data — MITx
+Reinforcement Learning — RWTH Aachen University
+Algorithmic Design and Techniques + Data Structures + Graph Algorithms — UC San Diego
+Bachelor in Naval Resources - Naval University Institute 
+Masters in Naval Weapons - Naval University Institute
+
+
+ADDITIONAL INFORMATION
+- Strong production mindset: only systems that can be explained, validated and reliably operated are put into live use
+- Open to Quantitative Developer, Quantitative Researcher and Quantitative Trader roles

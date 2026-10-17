@@ -1,0 +1,9 @@
+name = "agentic-resume"
+compatibility_date = "2025-10-01"
+pages_build_output_dir = "public"
+
+[vars]
+# Fast default; override via Cloudflare Pages dashboard or .dev.vars
+#DEFAULT_MODEL = "nvidia/nemotron-3.5-lightning:free"
+DEFAULT_MODEL= "liquid/lfm-2.5-2.6b:free"
+#DEFAULT_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agentic Resume · Claudio Catalani</title>
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --color-surface: #f7f7f6;
+      --color-surface-elevated: #ffffff;
+      --color-border: #d1d1d0;
+      --color-text-primary: #111111;
+      --color-text-secondary: #444444;
+      --color-text-muted: #8a8a8a;
+      --color-accent: #f59e0b;
+      --color-accent-hover: #d97706;
+      --color-indigo: #374151;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.06);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.06);
+    }
+
+    [data-theme="dark"] {
+      --color-surface: #000000;
+      --color-surface-elevated: #111111;
+      --color-border: #222222;
+      --color-text-primary: #f0f0f0;
+      --color-text-secondary: #a0a0a0;
+      --color-text-muted: #666666;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.2);
+    }
+
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: -apple-system, "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--color-surface);
+      color: var(--color-text-primary);
+      transition: background 0.25s ease, color 0.25s ease;
+      margin: 0;
+    }
+
+    ::selection { background: var(--color-accent); color: var(--color-surface); }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
+    .scrollbar-thin { scrollbar-width: thin; scrollbar-color: var(--color-border) transparent; }
+
+    .card {
+      background: var(--color-surface-elevated);
+      border: 1px solid var(--color-border);
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+      border-color: var(--color-accent);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      padding: 0.625rem 1.25rem;
+      background: var(--color-accent);
+      color: var(--color-surface);
+      font-weight: 600;
+      border: none;
+      border-radius: 0.75rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-primary:hover:not(:disabled) { background: var(--color-accent-hover); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .input-field {
+      width: 100%;
+      padding: 0.625rem 1rem;
+      background: var(--color-surface-elevated);
+      color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+      border-radius: 0.75rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .input-field::placeholder { color: var(--color-text-muted); }
+    .input-field:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent) 45%, transparent); border-color: transparent; }
+
+    .section-title {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--color-text-muted);
+    }
+
+    .pill {
+      padding: 0.375rem 0.75rem; font-size: 0.75rem; border-radius: 9999px;
+      background: var(--color-surface); color: var(--color-text-secondary);
+      border: 1px solid var(--color-border); cursor: pointer; transition: all 0.2s ease;
+    }
+    .pill:hover { border-color: var(--color-accent); color: var(--color-accent); }
+    .pill-active { background: var(--color-accent); color: var(--color-surface); border-color: var(--color-accent); }
+
+    .msg-user {
+      background: var(--color-accent); color: var(--color-surface);
+      border-radius: 1rem; max-width: 85%; padding: 0.5rem 0.75rem;
+      font-size: 0.875rem; line-height: 1.625; white-space: pre-wrap;
+    }
+    .msg-assistant {
+      background: var(--color-surface-elevated); color: var(--color-text-primary);
+      border: 1px solid var(--color-border);
+      border-radius: 1rem; max-width: 85%; padding: 0.5rem 0.75rem;
+      font-size: 0.875rem; line-height: 1.625;
+    }
+    .msg-assistant.pending::after {
+      content: "…"; color: var(--color-text-muted); animation: pulse 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+    /* Markdown emitted by streaming-markdown */
+    .msg-assistant > :first-child { margin-top: 0; }
+    .msg-assistant > :last-child { margin-bottom: 0; }
+    .msg-assistant p { margin: 0 0 0.5rem; }
+    .msg-assistant ul, .msg-assistant ol { margin: 0.25rem 0 0.5rem; padding-left: 1.25rem; }
+    .msg-assistant ul { list-style: disc; }
+    .msg-assistant ol { list-style: decimal; }
+    .msg-assistant li { margin: 0.125rem 0; }
+    .msg-assistant h1, .msg-assistant h2, .msg-assistant h3 { font-weight: 600; margin: 0.5rem 0 0.25rem; letter-spacing: -0.01em; }
+    .msg-assistant code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 0.25rem; padding: 0 0.25rem; }
+    .msg-assistant pre { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 0.5rem; padding: 0.5rem; overflow-x: auto; margin: 0.5rem 0; }
+    .msg-assistant pre code { border: none; padding: 0; }
+    .msg-assistant a { color: var(--color-accent); text-decoration: underline; }
+    .msg-assistant strong { font-weight: 700; }
+  </style>
+</head>
+<body class="h-screen w-full flex flex-col md:flex-row overflow-hidden">
+
+  <button id="langToggle"
+    class="fixed top-4 left-5 z-50 px-3 py-1.5 text-xs font-medium rounded-full bg-[var(--color-surface-elevated)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all shadow-md"></button>
+
+  <button id="themeToggle"
+    class="fixed top-4 right-5 z-50 p-2.5 rounded-full bg-[var(--color-surface-elevated)] border border-[var(--color-border)] shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+    aria-label="Toggle theme">
+    <svg id="icon-moon" class="w-5 h-5 text-[var(--color-text-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+    </svg>
+    <svg id="icon-sun" class="w-5 h-5 text-[var(--color-text-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display:none">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m-9-9h1m16 0h1M5.636 5.636l.707.707m12.02 12.02l.707.707M5.636 18.364l.707-.707m12.02-12.02l-.707-.707" />
+    </svg>
+  </button>
+
+  <aside id="profile"
+    class="w-full md:w-2/5 p-8 flex flex-col justify-between border-b md:border-b-0 md:border-r border-[var(--color-border)] bg-[var(--color-surface)] overflow-y-auto scrollbar-thin">
+    <div class="text-sm text-[var(--color-text-muted)]">Loading…</div>
+  </aside>
+
+  <main class="w-full md:w-3/5 h-full flex flex-col bg-[var(--color-surface)] min-w-0">
+    <div class="border-b border-[var(--color-border)] p-4 bg-[var(--color-surface-elevated)]">
+      <h3 id="suggestedTitle" class="section-title mb-4"></h3>
+      <div id="category-pills" class="flex flex-wrap gap-2 mb-3"></div>
+      <div id="question-pills" class="flex flex-wrap gap-2"></div>
+    </div>
+
+    <div id="messages" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
+
+    <form id="form" class="border-t border-[var(--color-border)] p-3 flex gap-2 bg-[var(--color-surface-elevated)]">
+      <input id="input" type="text" autocomplete="off" class="input-field flex-1" />
+      <button id="send" type="submit" class="btn-primary"></button>
+    </form>
+  </main>
+
+  <script type="module">
+    import * as smd from "https://cdn.jsdelivr.net/npm/streaming-markdown@0.2.15/smd.min.js";
+
+    // ---------- i18n ----------
+    const UI = {
+      en: {
+        title: null, // taken from data.json
+        skills: "Skills", experience: "Experience", education: "Education", projects: "Projects",
+        infrastructure: "Infrastructure", ai: "AI / ML", quant: "Quant Finance",
+        at: "at", tech: "Tech:", view: "View",
+        openTo: "Open to", certifications: "Certifications",
+        footer1: "Powered by Cloudflare Pages & OpenRouter.",
+        footer2: "Vanilla JS + LangChain · no build step.",
+        suggested: "Suggested Questions",
+        placeholder: "Type your query here...",
+        send: "Send",
+        switchTo: "ES",
+        greeting: (name) => `Hello! I'm an AI representation of ${name}. Ask me about their background, skills, or experience.`,
+      },
+      es: {
+        title: "Desarrollador Cuantitativo | Ingeniero IA",
+        skills: "Habilidades", experience: "Experiencia", education: "Educación", projects: "Proyectos",
+        infrastructure: "Infraestructura", ai: "IA / ML", quant: "Finanzas Cuantitativas",
+        at: "en", tech: "Tecnologías:", view: "Ver",
+        openTo: "Disponible para", certifications: "Certificaciones",
+        footer1: "Impulsado por Cloudflare Pages y OpenRouter.",
+        footer2: "JS vanilla + LangChain · sin build.",
+        suggested: "Preguntas Sugeridas",
+        placeholder: "Escribe tu consulta aquí...",
+        send: "Enviar",
+        switchTo: "EN",
+        greeting: (name) => `¡Hola! Soy una representación IA de ${name}. Pregúntame sobre su trayectoria, habilidades o experiencia.`,
+      },
+    };
+
+    const CATEGORIES = {
+      en: [
+        { label: "Experience", questions: ["What is your current role?", "Tell me about your work at Quant-Studio.", "What did you do in the Argentine Navy?"] },
+        { label: "AI & Data", questions: ["What AI and agentic tools do you use?", "How do you apply LLMs in production?", "What is your experience with MCP and Claude Code?"] },
+        { label: "Quant & Trading", questions: ["Describe your quantitative trading experience.", "Which markets and exchanges have you integrated?", "How do you validate a trading strategy?"] },
+        { label: "Education", questions: ["What are your MIT MicroMasters?", "Tell me about the Oxford Algorithmic Trading Programme.", "Which certifications do you hold?"] },
+        { label: "Contact", questions: ["How can I reach you?", "Are you open to new opportunities?", "What roles are you targeting?"] },
+      ],
+      es: [
+        { label: "Experiencia", questions: ["¿Cuál es tu rol actual?", "Háblame de tu trabajo en Quant-Studio.", "¿Qué hiciste en la Armada Argentina?"] },
+        { label: "IA & Datos", questions: ["¿Qué herramientas de IA y agentes usás?", "¿Cómo aplicás LLMs en producción?", "¿Qué experiencia tenés con MCP y Claude Code?"] },
+        { label: "Quant & Trading", questions: ["Describí tu experiencia en trading cuantitativo.", "¿Qué mercados y exchanges integraste?", "¿Cómo validás una estrategia de trading?"] },
+        { label: "Educación", questions: ["¿Cuáles son tus MicroMasters del MIT?", "Háblame del Oxford Algorithmic Trading Programme.", "¿Qué certificaciones tenés?"] },
+        { label: "Contacto", questions: ["¿Cómo puedo contactarte?", "¿Estás abierto a nuevas oportunidades?", "¿Qué roles estás buscando?"] },
+      ],
+    };
+
+    // ---------- State & elements ----------
+    const state = {
+      lang: (navigator.language || "en").toLowerCase().startsWith("es") ? "es" : "en",
+      data: null,
+      categoryIndex: 0,
+      history: [],
+      loading: false,
+    };
+
+    const html = document.documentElement;
+    const profileEl = document.getElementById("profile");
+    const messagesEl = document.getElementById("messages");
+    const input = document.getElementById("input");
+    const form = document.getElementById("form");
+    const sendBtn = document.getElementById("send");
+    const langToggle = document.getElementById("langToggle");
+    const themeToggle = document.getElementById("themeToggle");
+    const iconMoon = document.getElementById("icon-moon");
+    const iconSun = document.getElementById("icon-sun");
+    const suggestedTitle = document.getElementById("suggestedTitle");
+    const categoryPills = document.getElementById("category-pills");
+    const questionPills = document.getElementById("question-pills");
+
+    const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const val = (lang, en, es) => (lang === "es" && es ? es : en);
+    const scrollDown = () => { messagesEl.scrollTop = messagesEl.scrollHeight; };
+
+    // ---------- Theme ----------
+    function syncThemeIcons() {
+      const dark = html.getAttribute("data-theme") === "dark";
+      iconMoon.style.display = dark ? "none" : "block";
+      iconSun.style.display = dark ? "block" : "none";
+    }
+    themeToggle.addEventListener("click", () => {
+      const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      html.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      syncThemeIcons();
+    });
+
+    // ---------- Profile ----------
+    const ICONS = {
+      infra: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />',
+      ai: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />',
+      quant: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />',
+    };
+
+    function skillCard(icon, label, skills) {
+      return `<div class="card card-hover">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="p-2 rounded-lg" style="background: color-mix(in srgb, var(--color-indigo) 18%, transparent); color: var(--color-indigo)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">${icon}</svg>
+          </div>
+          <span class="section-title">${esc(label)}</span>
+        </div>
+        <p class="text-sm font-medium text-[var(--color-text-secondary)] leading-relaxed">${esc(skills.join(" • "))}</p>
+      </div>`;
+    }
+
+    function renderProfile() {
+      const d = state.data;
+      if (!d) return;
+      const L = state.lang;
+      const t = UI[L];
+      const title = t.title || d.title;
+      const bio = val(L, d.bio, d.bio_es);
+
+      const experience = d.experience.map((e) => `
+        <div class="pb-6 last:pb-0">
+          <div class="flex flex-wrap items-baseline gap-2 mb-2">
+            <h4 class="font-semibold text-[var(--color-text-primary)]">${esc(val(L, e.role, e.role_es))}</h4>
+            <span class="text-[var(--color-text-muted)]">${esc(t.at)}</span>
+            <span class="font-medium" style="color: var(--color-accent)">${esc(val(L, e.company, e.company_es))}</span>
+          </div>
+          <p class="text-xs text-[var(--color-text-muted)] mb-3">${esc(e.period)} • ${esc(val(L, e.location, e.location_es))}</p>
+          <ul class="space-y-1.5 text-sm text-[var(--color-text-secondary)] pl-4 list-disc">
+            ${val(L, e.achievements, e.achievements_es).map((a) => `<li>${esc(a)}</li>`).join("")}
+          </ul>
+          <p class="text-xs text-[var(--color-text-muted)] mt-2"><strong>${esc(t.tech)}</strong> ${esc(e.technologies.join(", "))}</p>
+        </div>`).join("");
+
+      const education = d.education.map((e) => {
+        const details = val(L, e.details, e.details_es);
+        return `<div class="pb-4 last:pb-0">
+          <p class="font-medium text-[var(--color-text-primary)]">${esc(val(L, e.degree, e.degree_es))}</p>
+          <p class="text-sm" style="color: var(--color-accent)">${esc(val(L, e.institution, e.institution_es))}</p>
+          <p class="text-xs text-[var(--color-text-muted)]">${esc(e.year)}${details ? ` • ${esc(details)}` : ""}</p>
+        </div>`;
+      }).join("");
+
+      const projects = d.projects.map((p) => `
+        <div class="card card-hover">
+          <div class="flex items-start justify-between gap-4 mb-2">
+            <h4 class="font-semibold text-[var(--color-text-primary)]">${esc(val(L, p.name, p.name_es))}</h4>
+            ${p.link ? `<a href="${esc(p.link)}" target="_blank" rel="noopener noreferrer" class="text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">${esc(t.view)}</a>` : ""}
+          </div>
+          <p class="text-sm text-[var(--color-text-secondary)] mb-3">${esc(val(L, p.description, p.description_es))}</p>
+          <div class="flex flex-wrap gap-1">
+            ${p.tech.map((tech) => `<span class="px-2 py-0.5 text-xs bg-[var(--color-surface)] border border-[var(--color-border)] rounded-full text-[var(--color-text-muted)]">${esc(tech)}</span>`).join("")}
+          </div>
+        </div>`).join("");
+
+      const roles = (d.targetRoles && (d.targetRoles[L] || d.targetRoles.en)) || [];
+      const certificationsList = (d.certificates || []).map((c) => `
+        <li class="flex items-start justify-between gap-3">
+          <span class="text-sm text-[var(--color-text-secondary)]">${esc(val(L, c.name, c.name_es))}</span>
+          <span class="text-xs text-[var(--color-text-muted)] whitespace-nowrap mt-0.5">${esc(c.issuer)} · ${esc(c.year)}</span>
+        </li>`).join("");
+
+      profileEl.innerHTML = `
+        <div class="space-y-6 relative">
+          <div class="flex flex-col items-center text-center">
+            <div class="w-32 h-32 rounded-full overflow-hidden border-2 shadow-xl" style="border-color: var(--color-indigo)">
+              <img src="${esc(d.photo)}" alt="${esc(d.name)} profile" class="w-full h-full object-cover"
+                onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23374151%22/%3E%3C/svg%3E'" />
+            </div>
+            <div class="mt-6 space-y-1">
+              <h1 class="text-3xl font-extrabold tracking-tight text-[var(--color-text-primary)]">${esc(d.name)}</h1>
+              <p class="font-medium text-lg" style="color: var(--color-indigo)">${esc(title)}</p>
+              <p class="text-sm text-[var(--color-text-muted)]">${esc(d.location)}</p>
+            </div>
+            <p class="text-[var(--color-text-secondary)] text-sm leading-relaxed mt-3">${esc(bio)}</p>
+            ${roles.length ? `<div class="mt-4 w-full">
+              <span class="section-title">${esc(t.openTo)}</span>
+              <div class="mt-2 flex flex-wrap justify-center gap-1.5">
+                ${roles.map((r) => `<span class="px-2.5 py-1 text-xs rounded-full bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-secondary)]">${esc(r)}</span>`).join("")}
+              </div>
+            </div>` : ""}
+            <div class="w-full space-y-3 pt-4">
+              ${skillCard(ICONS.infra, t.infrastructure, d.skills.infrastructure)}
+              ${skillCard(ICONS.ai, t.ai, d.skills.ai)}
+              ${skillCard(ICONS.quant, t.quant, d.skills.quant)}
+            </div>
+            <div class="w-full pt-8 text-left">
+              <span class="section-title">${esc(t.experience)}</span>
+              <div class="mt-6 space-y-6">${experience}</div>
+            </div>
+            <div class="w-full pt-8 text-left">
+              <span class="section-title">${esc(t.education)}</span>
+              <div class="mt-6 space-y-6">${education}</div>
+            </div>
+            <div class="w-full pt-8 text-left">
+              <span class="section-title">${esc(t.certifications)}</span>
+              <ul class="mt-6 space-y-2">${certificationsList}</ul>
+            </div>
+            <div class="w-full pt-8 text-left">
+              <span class="section-title">${esc(t.projects)}</span>
+              <div class="mt-6 space-y-4">${projects}</div>
+            </div>
+          </div>
+        </div>
+        <footer class="text-xs text-[var(--color-text-muted)] mt-8 pt-6 border-t border-[var(--color-border)]">
+          <p>${esc(t.footer1)}</p>
+          <p class="mt-1">${esc(t.footer2)}</p>
+        </footer>`;
+    }
+
+    // ---------- Suggestions ----------
+    function renderSuggestions() {
+      const L = state.lang;
+      const cats = CATEGORIES[L];
+      suggestedTitle.textContent = UI[L].suggested;
+      categoryPills.innerHTML = cats.map((c, i) =>
+        `<button type="button" data-category="${i}" class="pill ${i === state.categoryIndex ? "pill-active" : ""}">${esc(c.label)}</button>`
+      ).join("");
+      questionPills.innerHTML = cats[state.categoryIndex].questions.map((q) =>
+        `<button type="button" data-suggestion="${esc(q)}" class="pill">${esc(q)}</button>`
+      ).join("");
+    }
+
+    // ---------- Messages ----------
+    function addMessage(role, content) {
+      const wrapper = document.createElement("div");
+      wrapper.className = `flex ${role === "user" ? "justify-end" : "justify-start"}`;
+      const bubble = document.createElement("div");
+      bubble.className = role === "user" ? "msg-user" : "msg-assistant";
+      if (role === "user") bubble.textContent = content;
+      wrapper.appendChild(bubble);
+      messagesEl.appendChild(wrapper);
+      scrollDown();
+      return bubble;
+    }
+
+    function showGreeting() {
+      messagesEl.innerHTML = "";
+      addMessage("assistant", UI[state.lang].greeting(state.data.name));
+    }
+
+    // ---------- Chat streaming (ported from openrouter-chat) ----------
+    async function submit(text) {
+      const trimmed = (text || "").trim();
+      if (!trimmed || state.loading) return;
+
+      state.loading = true;
+      input.value = "";
+      input.disabled = true;
+      sendBtn.disabled = true;
+
+      state.history.push({ role: "user", content: trimmed });
+      addMessage("user", trimmed);
+
+      const bubble = addMessage("assistant", "");
+      bubble.classList.add("pending");
+
+      const renderer = smd.default_renderer(bubble);
+      const parser = smd.parser(renderer);
+      let full = "";
+      let started = false;
+
+      try {
+        const res = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ messages: state.history, language: state.lang }),
+        });
+
+        if (!res.ok || !res.body) {
+          let detail = res.statusText;
+          try { const j = await res.json(); detail = j.error || detail; } catch (_) {}
+          throw new Error(`Server error (${res.status}): ${detail}`);
+        }
+
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() || "";
+
+          for (const line of lines) {
+            if (!line.startsWith("data: ")) continue;
+            const data = line.slice(6).trim();
+            if (data === "[DONE]") continue;
+            let json;
+            try { json = JSON.parse(data); } catch (_) { continue; }
+            if (json.error) throw new Error(json.error);
+            const delta = json.choices?.[0]?.delta?.content || "";
+            if (delta) {
+              if (!started) { started = true; bubble.classList.remove("pending"); }
+              full += delta;
+              smd.parser_write(parser, delta);
+              scrollDown();
+            }
+          }
+        }
+
+        smd.parser_end(parser);
+        if (!full) throw new Error("Empty response from assistant");
+        state.history.push({ role: "assistant", content: full });
+      } catch (err) {
+        bubble.classList.remove("pending");
+        bubble.textContent = "Error: " + (err instanceof Error ? err.message : String(err));
+      } finally {
+        state.loading = false;
+        input.disabled = false;
+        sendBtn.disabled = false;
+        input.focus();
+      }
+    }
+
+    // ---------- Events ----------
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      submit(input.value);
+    });
+
+    categoryPills.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-category]");
+      if (!btn) return;
+      state.categoryIndex = Number(btn.getAttribute("data-category"));
+      renderSuggestions();
+    });
+
+    questionPills.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-suggestion]");
+      if (!btn || state.loading) return;
+      submit(btn.getAttribute("data-suggestion"));
+    });
+
+    langToggle.addEventListener("click", () => {
+      state.lang = state.lang === "en" ? "es" : "en";
+      renderChrome();
+      renderProfile();
+      showGreeting();
+    });
+
+    function renderChrome() {
+      const L = state.lang;
+      langToggle.textContent = UI[L].switchTo;
+      langToggle.setAttribute("title", L === "en" ? "Switch to Spanish" : "Cambiar a inglés");
+      input.placeholder = UI[L].placeholder;
+      sendBtn.textContent = UI[L].send;
+      renderSuggestions();
+    }
+
+    // ---------- Init ----------
+    (async function init() {
+      syncThemeIcons();
+      renderChrome();
+      try {
+        const res = await fetch("/data.json");
+        state.data = await res.json();
+      } catch (err) {
+        profileEl.innerHTML = `<div class="text-sm" style="color: var(--color-error, #ef4444)">Failed to load resume data.</div>`;
+        return;
+      }
+      renderProfile();
+      showGreeting();
+    })();
+  </script>
+</body>
+</html>
